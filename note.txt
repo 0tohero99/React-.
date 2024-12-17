@@ -9,3 +9,60 @@ git push -u origin main
 git remote add origin https://github.com/0tohero99/React-..git
 git branch -M main
 git push -u origin main
+
+NOTE: 
+    frontend runs on database and backend is the part of the server so cannot interect with each other and need backend to interect .
+
+    Any frontend can have any backend only need is that 
+    apis should return the json format of data.
+
+    structure :
+     frontend = interect = > backend = interect = > database .= server(to make it live where aplication deploye) .
+
+MERN : Advantage:
+    = mongodb (database) follow the structure of the react
+      (i.e.json) is also javascripts.
+    = express and node (backend) it is also javascripts.
+    = react (frontend) is also javascripts.
+
+Apis :
+    It is a url developed in backend by any language 
+    and it should return data in json format of data .
+
+    React want the url that return data in json format dosn't matter it is made with any language i.e. java python .net etc. 
+
+open source : 
+  = anyone can contribute to the development.
+
+NPM : 
+  = node pakage manager .
+  = it is a open source registery where pakages is kept that anyone can use & contribute to the development.
+
+pakages.json :
+  = entry point to the aplication .
+  = all the pakages install .
+  = all the commands (start,test,build).
+  = meta data (name,version,descriptions).
+
+steps to generate pakages.json : 
+= go inside the folder using terminal.
+= npm init .
+= answer all the questions .
+= enter or.
+= npm init -y.
+
+steps to install pakages : 
+= go inside the folder using terminal.
+= npm i pakagename .
+= npm i axios .
+= ex. : npm i axios .
+
+node_modules : 
+  = contains all the pakage installed .
+pakage-lock.json : 
+  = dependency tree i.e. it tells which pakage depends upon what.
+
+Note: npm i for node node_modules. it automatically checks the pakage.json file and install it.
+
+.gitignore : 
+  anything (that is heavy i.e. folders) that we dont want to push to git we have to write in it.
