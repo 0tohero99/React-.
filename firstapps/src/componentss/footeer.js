@@ -11,8 +11,4 @@ const Footer = () => {
 
 export default Footer
 
-const A = () => {
-    return (
-       [1, 2] 
-    )
-}
+ 

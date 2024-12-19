@@ -121,3 +121,6 @@ react  > main library
 React
 > Is a Javascript library which help to build single page application (SPA)
 using component based structure
+
+Note: Through React.fragment & fragment for emptydivss.
+      Always give styling through externally by liinking it.
