@@ -69,6 +69,7 @@ Note: npm i for node node_modules. it automatically checks the pakage.json file 
 
 steps to generate react aplications  : 
   = go inside the folder using terminal.
+<<<<<<< HEAD
   = create-react-app appname.
   = npx create-react-app appname.
 
@@ -124,3 +125,9 @@ using component based structure
 
 Note: Through React.fragment & fragment for emptydivss.
       Always give styling through externally by liinking it.
+=======
+  = npx create-react-app appname
+
+
+=================cls 2======================================
+>>>>>>> cec7d43eeeba6d4773aba8cff769828756bcfca4
