@@ -129,5 +129,30 @@ Note: Through React.fragment & fragment for emptydivss.
   = npx create-react-app appname
 
 
-=================cls 2======================================
->>>>>>> cec7d43eeeba6d4773aba8cff769828756bcfca4
+state
+> Act like a local variable
+> Every component will have its own state
+> We can update the state
+> With every State change Component will re-render
+> Any Data interaction will happen through state
+
+props
+> is use to share data between componets
+> we can only share data between nested component
+
+
+class Component 
+> logical
+> all logic api calling,state, handle events
+
+
+functional component
+> dumb component
+> display
+
+
+hooks: after 16.8.
+everthing is done through the hooks. 
+
+=================cls 3======================================
+ 
