@@ -27,9 +27,9 @@ MERN : Advantage:
 
 Apis :
     It is a url developed in backend by any language 
-    and it should return data in json format of data .
+    and it should return json format of data .
 
-    React want the url that return data in json format dosn't matter it is made with any language i.e. java python .net etc. 
+    React want the url to return data in json format dosn't matter it is made with any language i.e. java python .net etc. 
 
 open source : 
   = anyone can contribute to the development.
@@ -38,13 +38,45 @@ NPM :
   = node pakage manager .
   = it is a open source registery where pakages is kept that anyone can use & contribute to the development.
 
+JSON
+> JavaScript Object notation
+
+let movieName = "Avengers"
+let movieRating = "4.5"
+let movieType = "Action"
+
+let movieName1 = "Jab We Met"
+let movieRating1 = "4.8"
+let movieType1 = "Romantic"
+
+let movie= {
+    name:"Avengers",
+    rating:"4.5",
+    type:"Action"
+}
+
+let movie = [
+    {
+        "name":"Avengers",
+        "rating":"4.5",
+        "type":"Action"
+    },
+    {
+        "name":"Jab We Met",
+        "rating":4.8,
+        "type":"Romatic"
+    }  
+]
+
 pakages.json :
   = entry point to the aplication .
+    it contains : 
   = all the pakages install .
   = all the commands (start,test,build).
-  = meta data (name,version,descriptions).
+  = meta data (name,version,descriptions etc.).
 
 steps to generate pakages.json : 
+= nodejs must be installed.
 = go inside the folder using terminal.
 = npm init .
 = answer all the questions .
@@ -54,7 +86,6 @@ steps to generate pakages.json :
 steps to install pakages : 
 = go inside the folder using terminal.
 = npm i pakagename .
-= npm i axios .
 = ex. : npm i axios .
 
 node_modules : 
@@ -69,7 +100,7 @@ Note: npm i for node node_modules. it automatically checks the pakage.json file 
 
 steps to generate react aplications  : 
   = go inside the folder using terminal.
-<<<<<<< HEAD
+<<<<<<< 
   = create-react-app appname.
   = npx create-react-app appname.
 
