@@ -100,7 +100,6 @@ Note: npm i for node node_modules. it automatically checks the pakage.json file 
 
 steps to generate react aplications  : 
   = go inside the folder using terminal.
-<<<<<<< 
   = create-react-app appname.
   = npx create-react-app appname.
 
@@ -124,11 +123,11 @@ major.minor.patch
 //local dependency
 > Local to the folder
 > can only be used in the same application
-> for each application we to install again
+> for each application we need to install again
 
 //global dependency
 > Installed in your laptop
-> need admin permission to install
+> need admin permissions to install
 > only used before app start/generate the app
 
 //window
@@ -154,12 +153,16 @@ React
 > Is a Javascript library which help to build single page application (SPA)
 using component based structure
 
+SPA = एक ऐसा वेबसाइट/वेब ऐप जो सिर्फ एक ही पेज पर चलता है, और बिना reload के अलग-अलग views दिखाता है, जैसे मोबाइल ऐप।
+
+virtualdom > ith rconsilation algo > it compares the content with real dom andrepalce the old with new content.
+
 Note: Through React.fragment & fragment for emptydivss.
       Always give styling through externally by liinking it.
-=======
+      
   = npx create-react-app appname
 
-
+empty tag does not allow is class or any styling so react.fragment is needed or try with divs.
 state
 > Act like a local variable
 > Every component will have its own state
