@@ -11,25 +11,34 @@ git branch -M main
 git push -u origin main
 =================cls 1======================================
 NOTE: 
-    frontend runs on database and backend is the part of the server so cannot interect with each other and need backend to interect .
+   
+   The frontend does not interact directly with the database.
+   Frontend and Backend interact with each other through APIs.
+   It sends a request to the backend,then backend interacts with the database to fetch or update the data, then returns it to the frontend."
 
-    Any frontend can have any backend only need is that 
+
+
+    Any frontend can have any backend ,only need is that 
     apis should return the json format of data.
 
+    ( JSON एक standard और lightweight format है जो frontend को आसानी से parse किया जा सकता है।)
     structure :
+    
      frontend = interect = > backend = interect = > database .= server(to make it live where aplication deploye) .
 
-MERN : Advantage:
-    = mongodb (database) follow the structure of the react
-      (i.e.json) is also javascripts.
-    = express and node (backend) it is also javascripts.
-    = react (frontend) is also javascripts.
+MERN : Advantage: 
+ 
+   MERN stack में सभी technologies JavaScript पर आधारित होती हैं।
+
+   MongoDB जो data store करता है, वो JSON जैसा format (BSON( (Binary JSON))) होता है
+   जो JavaScript के ऑब्जेक्ट्स साथ naturally match करता है। जिससे डेटा भेजना और पाना बहुत सरल हो जाता है।
+   Express और Node backend में इस्तेमाल होते हैं,ये भी JavaScript में होते हैं।
+   React भी frontend में JavaScript में काम करता है।   
 
 Apis :
-    It is a url developed in backend by any language 
-    and it should return json format of data .
+    It is a url developed in backend and it returns json format of data .
 
-    React want the url to return data in json format dosn't matter it is made with any language i.e. java python .net etc. 
+    React want the url to return data in json format when it call the API, dosn't matter it is made with any language i.e. java python .net etc. 
 
 open source : 
   = anyone can contribute to the development.
@@ -70,17 +79,17 @@ let movie = [
 
 pakages.json :
   = entry point to the aplication .
-    it contains : 
-  = all the pakages install .
+  it contains : 
+  = the records of all the pakages install .
   = all the commands (start,test,build).
   = meta data (name,version,descriptions etc.).
 
 steps to generate pakages.json : 
 = nodejs must be installed.
-= go inside the folder using terminal.
+= go inside the folder through terminal.
 = npm init .
 = answer all the questions .
-= enter or.
+= enter ok or.
 = npm init -y.
 
 steps to install pakages : 
@@ -97,11 +106,6 @@ Note: npm i for node node_modules. it automatically checks the pakage.json file 
 
 .gitignore : 
   anything (that is heavy i.e. folders) that we dont want to push to git we have to write in it.
-
-steps to generate react aplications  : 
-  = go inside the folder using terminal.
-  = create-react-app appname.
-  = npx create-react-app appname.
 
 major.minor.patch
   "^1.7.9" (caret)(minor) 
@@ -128,18 +132,20 @@ major.minor.patch
 //global dependency
 > Installed in your laptop
 > need admin permissions to install
-> only used before app start/generate the app
+> only used before app start/generate the app.
 
 //window
 (one time)
 > open cmd as administrator
-> npm i -g create-react-app
+> npm i -g create-react-app appname .
 > close cmd
 
 (for every app)
 > open cmd
 > go inside the folder where you want app
-> create-react-app aapname
+> create-react-app aapname or
+> npx create-react-app appname
+
 
 // start app
 > npm start
@@ -153,16 +159,15 @@ React
 > Is a Javascript library which help to build single page application (SPA)
 using component based structure
 
-SPA = एक ऐसा वेबसाइट/वेब ऐप जो सिर्फ एक ही पेज पर चलता है, और बिना reload के अलग-अलग views दिखाता है, जैसे मोबाइल ऐप।
+SPA = A website that runs on a single page and shows different views without reloading, just like a mobile app.
 
-virtualdom > ith rconsilation algo > it compares the content with real dom andrepalce the old with new content.
-
-Note: Through React.fragment & fragment for emptydivss.
-      Always give styling through externally by liinking it.
+virtualdom > by rconsilation algo > it compares the content with real dom and repalce the old with new content.
+ 
+Note: React.fragment & fragment for emptydivss.
+      Always give styling through externally by linking it.
       
   = npx create-react-app appname
 
-empty tag does not allow is class or any styling so react.fragment is needed or try with divs.
 state
 > Act like a local variable
 > Every component will have its own state
@@ -186,7 +191,40 @@ functional component
 
 
 hooks: after 16.8.
-everthing is done through the hooks. 
+everthing is done through the hooks.
 
 =================cls 3======================================
+
+Destructuring :
+{
+  city : city
+}
+{
+  city
+}
+map :
+ most refine way of writting for loops.it iterate over the data. 
+
+ var a =[2,3,4,5,6,7]
+ a.map((data)=>{return data*2})
+
+ filter : to filterout the data. (only returns the value      onwhich conditon is true).
  
+  var a =[2,3,4,5,6,7]
+  a.filter((data)=>{return data > 2})
+
+  Indexoff : if the value is the part of array it will tell the index no if the value is not the part of array it will give  -1 .
+
+  var a =["a", "b","c"]
+  a.indexOf("a")
+  0
+  
+  var a =["a", "b","c"]
+  a.indexOf("b")
+  1
+
+  var a =["a", "b","c"]
+  a.indexOf("e")
+  -1 .
+
+
